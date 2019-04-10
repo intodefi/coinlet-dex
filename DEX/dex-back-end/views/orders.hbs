@@ -1,0 +1,34 @@
+<section id="content">
+    <div id="table-datatables">
+        <h4 class="header">Orders</h4>
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <table id="data-table-simple" class="responsive-table display" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Amount Give</th>
+                            <th>Amount Get</th>
+                            <th>Token Give</th>
+                            <th>Expires</th>
+                            <th>Users</th>
+                            <th>date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         {{#each orders}}
+                         <tr>
+                             <td>{{id}}</td>
+                             <td>{{order.amountGet}}</td>
+                             <td>{{order.amountGive}}</td>
+                             <td>{{order.tokenGive}}</td>
+                             <td>{{order.expires}}</td>
+                             <td>{{order.user}}</td>
+                             <td>{{updated}}</td>
+                         </tr>
+                         {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</section>

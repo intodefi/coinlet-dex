@@ -1,0 +1,21 @@
+<div class="row-box height1 scroll">
+  <table class="table table-condensed table-borderless">
+    <tr class="table-header">
+      <th><%= selectedToken.name %>/<%= selectedBase.name %></th>
+      <th><%= selectedToken.name %></th>
+      <th><%= selectedBase.name %></th>
+    </tr>
+    <% trades.forEach(function(trade){ %>
+      <tr>
+        <td><span class="<%= trade.amount>0 ? 'buy' : 'sell' %>"><%= trade.price.toNumber().toFixed(9) %><i class="fa fa-arrow-<%= trade.amount>0 ? 'up' : 'down' %>" aria-hidden="true"></i></span></td>
+        <td><%= bundle.utility.weiToEth(Math.abs(trade.amount), bundle.BitDex.getDivisor(selectedToken)) %></td>
+        <td><%= bundle.utility.weiToEth(Math.abs(trade.amount)*trade.price * bundle.BitDex.getDivisor(selectedBase)/bundle.BitDex.getDivisor(selectedToken), bundle.BitDex.getDivisor(selectedBase)) %><a href="<%= trade.txLink %>" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></td>
+      </tr>
+    <% }); %>
+    <tr>
+      <td colspan="3" class="trn">only_7_days</td>
+    </tr>
+  </table>
+</div>
+</div>
+
