@@ -63,3 +63,5 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/
 <p>● Run chmod +x browserify.sh</p>
 <p>● Run ./browserify.sh.</p>
 <p>● Open your_domain_name.com or your_ip_address in the browser</p>
+
+This repository is as is and no support it provided, contributions are welcomed, I myself will be contributing to this repository too, I do not take responsibility for any losses.
