@@ -8,7 +8,7 @@ Opera.</p>
 <p>After you install MetaMask, follow the setup instructions to create a wallet. Make sure to
 safely store your mnemonic phrase and pick a secure password.</p>
 <p>Deploy Contract</p>
-<p>● Goto withpragma.</p>
+<p>● Go to withpragma.com (note* this website is currently offline, please use a alternative).</p>
 <p>● Login with valid credentials. Sign up if you don’t have an account.</p>
 <p>● Paste the contract which you have.</p>
 <p>● Goto the name of contract on the lines 151 and 168.</p>
